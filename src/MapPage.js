@@ -195,7 +195,7 @@ const loadData = async () => {
   try {
 
     const res = await fetch(
-      "http://localhost:8000/submissions"
+      "https://land-intelligence-platform-production.up.railway.app/submissions"
     );
 
     const data = await res.json();
@@ -337,7 +337,7 @@ if (
       };
 
       const res = await fetch(
-        "http://localhost:8000/submit",
+        "https://land-intelligence-platform-production.up.railway.app/submit",
         {
           method: "POST",
 

@@ -1002,7 +1002,7 @@ export default function SubmitPage() {
       console.log("SUBMIT PAYLOAD:", payload);
 
       const res = await fetch(
-        "http://localhost:8000/submit",
+        "https://land-intelligence-platform-production.up.railway.app/submit",
         {
 
           method: "POST",

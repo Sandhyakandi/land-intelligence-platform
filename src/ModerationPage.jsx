@@ -11,7 +11,7 @@ export default function ModerationPage() {
 
     try {
 
-      const res = await fetch("http://localhost:8000/pending");
+      const res = await fetch("https://land-intelligence-platform-production.up.railway.app/pending");
 
       const json = await res.json();
 
@@ -33,7 +33,7 @@ export default function ModerationPage() {
   // APPROVE
   const approveLand = async (id) => {
 
-    await fetch(`http://localhost:8000/approve/${id}`, {
+    await fetch(`https://land-intelligence-platform-production.up.railway.app/approve/${id}`, {
       method: "POST"
     });
 
@@ -45,7 +45,7 @@ export default function ModerationPage() {
   // REJECT
   const rejectLand = async (id) => {
 
-    await fetch(`http://localhost:8000/reject/${id}`, {
+    await fetch(`https://land-intelligence-platform-production.up.railway.app/reject/${id}`, {
       method: "POST"
     });
 

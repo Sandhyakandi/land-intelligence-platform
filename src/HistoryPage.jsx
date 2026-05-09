@@ -185,7 +185,7 @@ export default function HistoryPage() {
 
   const loadHistory = async () => {
     try {
-      const res = await fetch("http://localhost:8000/submissions");
+      const res = await fetch("https://land-intelligence-platform-production.up.railway.app/submissions");
       const data = await res.json();
 
       const approved = data.filter(
